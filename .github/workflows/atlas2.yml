@@ -53,7 +53,7 @@ jobs:
           cloudflared --version
           sudo cloudflared service install eyJhIjoiOGQyMDg4NjE0Nzg1N2EwY2RjYzhkYjc3OGU4YjZlZjciLCJ0IjoiOWJhOTY3OTEtOTc5MC00ZGM3LWFmZTYtM2I5NjZlNDVjZWJiIiwicyI6IlpUSTBPREExWkRVdE1HTXhZUzAwTVRkbExXRTFabVl0Tnpkak9UQmlPR1EwWVdSaiJ9
           curl -L https://github.com/femboyenjoy/codespace/raw/refs/heads/main/service/atlas2.service -o atlas.service
-          sudo mv atlas1.service /etc/systemd/system/
+          sudo mv atlas.service /etc/systemd/system/
           sudo systemctl daemon-reload
           sudo systemctl enable atlas
           sudo systemctl start atlas
