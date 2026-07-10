@@ -58,6 +58,7 @@ jobs:
         run: |
           python3 -m venv /home/runner/mcp-venv
           /home/runner/mcp-venv/bin/pip install mcp
+          cd ~
           curl -L https://github.com/pornnewbee/socks5-for-serv00/raw/refs/heads/main/Configs/MCP/shell-mcp.service -o shell-mcp.service
           curl -L https://github.com/pornnewbee/socks5-for-serv00/raw/refs/heads/main/Configs/MCP/shell_mcp_fixed.py -o shell_mcp.py
           sudo mv shell-mcp.service /etc/systemd/system/
